@@ -1,0 +1,5 @@
+# REQUIRED FOR GITHUB PAGES
+baseurl: ""
+url: "https://<YOUR-USERNAME>.github.io"  # REPLACE WITH YOUR USERNAME
+theme: jekyll-theme-primer  # GitHub's only allowed theme (lightweight)
+plugins: []

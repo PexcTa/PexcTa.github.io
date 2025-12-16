@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Your Name</div>
+      <ul class="nav-tabs">
+        <li><a href="#about" class="active" data-tab="about">About</a></li>
+        <li><a href="#projects" data-tab="projects">Projects</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section (default view) -->
+    <section id="about" class="tab-content active">
+      <div class="container">
+        <img src="assets/images/profile.jpg" alt="Your Name" class="profile-img">
+        <h1>Dr. Alex Rivera</h1>
+        <p class="tagline">Data Scientist & ML Engineer | Transforming research into industry solutions</p>
+        
+        <div class="bio">
+          <p>Former academic researcher (PhD in Computational Biology) with 5+ years building predictive models for healthcare AI. Specialized in turning complex data into actionable insights with clear business impact.</p>
+          
+          <div class="skills">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>D3.js</span>
+            <span>Cloud Deployment</span>
+            <span>Technical Leadership</span>
+          </div>
+          
+          <a href="mailto:you@example.com" class="btn">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-grid">
+          <!-- Project Card 1 -->
+          <a href="projects/patient-predictor.html" class="project-card">
+            <div class="project-img">
+              <img src="assets/images/patient-predictor-thumb.png" alt="Patient outcome prediction dashboard">
+            </div>
+            <h3>Hospital Readmission Predictor</h3>
+            <p>Reduced 30-day readmissions by 22% for 3 hospital systems using ensemble ML models</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>XGBoost</span>
+              <span>D3.js</span>
+            </div>
+          </a>
+          
+          <!-- Project Card 2 (repeat pattern) -->
+          <a href="projects/supply-chain.html" class="project-card">
+            <div class="project-img">
+              <img src="assets/images/supply-chain-thumb.png" alt="Supply chain optimization">
+            </div>
+            <h3>Supply Chain Risk Dashboard</h3>
+            <p>Real-time risk scoring system adopted by Fortune 500 logistics company</p>
+            <div class="project-tags">
+              <span>PyTorch</span>
+              <span>React</span>
+              <span>AWS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/you" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/you" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
