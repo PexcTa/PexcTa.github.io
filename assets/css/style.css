@@ -252,3 +252,108 @@ footer {
     padding: 0 1.5rem;
   }
 }
+
+/* ============== MODAL STYLES ============== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  animation: modalOpen 0.4s ease-out;
+  position: relative;
+  padding: 2.5rem;
+}
+
+@keyframes modalOpen {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 2100;
+}
+
+.close-modal:hover {
+  color: #ef4444;
+}
+
+/* Project details styling */
+.project-detail h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.project-detail .meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.project-detail .problem-statement,
+.project-detail .solution,
+.project-detail .results {
+  margin: 2rem 0;
+}
+
+.project-detail img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-detail .deliverables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-detail .deliverable-card {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    margin: 10px;
+  }
+  
+  .close-modal {
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
