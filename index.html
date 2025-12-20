@@ -52,32 +52,40 @@
         
         <div class="project-grid">
           <!-- Project Card 1 -->
-          <a href="projects/patient-predictor.html" class="project-card">
+          <a href="#" class="project-card" data-project="fractal-generator">
             <div class="project-img">
-              <img src="assets/images/patient-predictor-thumb.png" alt="Patient outcome prediction dashboard">
+              <img src="assets/images/fractal-thumb.jpg" alt="Porous Eden Mass Fractal Generator">
             </div>
-            <h3>Hospital Readmission Predictor</h3>
-            <p>Reduced 30-day readmissions by 22% for 3 hospital systems using ensemble ML models</p>
+            <h3>Porous Eden Mass Fractal Aggregate Generator</h3>
+            <p>A Streamlit-based demo of a particle aggregation simulation framework.</p>
             <div class="project-tags">
               <span>Python</span>
-              <span>XGBoost</span>
-              <span>D3.js</span>
+              <span>Streamlit</span>
+              <span>Scientific Visualization</span>
             </div>
           </a>
           
-          <!-- Project Card 2 (repeat pattern) -->
-          <a href="projects/supply-chain.html" class="project-card">
+          <!-- Project Card 2 (Example - duplicate for more) -->
+          <a href="#" class="project-card" data-project="supply-chain">
             <div class="project-img">
-              <img src="assets/images/supply-chain-thumb.png" alt="Supply chain optimization">
+              <img src="assets/images/supply-chain-thumb.jpg" alt="Supply Chain Risk Dashboard">
             </div>
             <h3>Supply Chain Risk Dashboard</h3>
             <p>Real-time risk scoring system adopted by Fortune 500 logistics company</p>
             <div class="project-tags">
               <span>PyTorch</span>
-              <span>React</span>
+              <span>D3.js</span>
               <span>AWS</span>
             </div>
           </a>
+        </div>
+      </div>
+
+      <!-- MODAL TEMPLATES (Hidden until clicked) -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div id="modal-content"></div>
         </div>
       </div>
     </section>
