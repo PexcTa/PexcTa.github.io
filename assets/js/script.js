@@ -46,14 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
     `,
     "thorium-phosphates": `
       <div class="project-detail">
-        <h2>Phase Evolution in the Thorium Dioxide - Sodium Phosphate System</h2>
+        <h2>Phase Evolution in the Thorium Dioxide - Phosphate System</h2>
         <div class="meta">
           <span><i class="far fa-calendar"></i> Mar 2024 - Jan 2025</span>
           <span><i class="far fa-flask"></i> Research Project</span>
         </div>
-        <p>Nanoscale thorium dioxide, ThO$_2$, is the dominant form of thorium under conditions close to that in the natural environment.
-        One reason we were interested in the behaviour of nanoscale ThO$_2$ is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO$_2$.
-        Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations.</p>
+        <p>Nanoscale thorium dioxide, ThO<sub>2</sub>, is the dominant form of thorium under conditions close to that in the natural environment.
+        One reason we were interested in the behaviour of nanoscale ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO<sub>2</sub>.
+        Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations. Phosphate is a very common anion and an agricultural effluent. Historically,
+        phosphate has been actively used to treat nuclear waste to sequester high-valent actinides. In this work, carried out at Lomonosov Moscow State University, I explored some of the 
+        chemistry in the thorium dioxide - phosphate system.</p>
       </div>
     `
     // ... your other projects
