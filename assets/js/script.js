@@ -38,12 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="project-detail">
         <h2>Porous Eden Mass Fractal Aggregate Generator</h2>
         <div class="meta">
-          <span><i class="far fa-calendar"></i> Jan 2023 - Present</span>
-          <span><i class="far fa-flask"></i> Research Project</span>
+          <span><i class="far fa-calendar"></i> Jul 2025 - Dec 2025</span>
+          <span><i class="far fa-flask"></i> Modelling and Simulations</span>
         </div>
         <p>This is a test without images.</p>
       </div>
+    `,
+    "thorium-phosphates": `
+      <div class="project-detail">
+        <h2>Phase Evolution in the Thorium Dioxide - Sodium Phosphate System</h2>
+        <div class="meta">
+          <span><i class="far fa-calendar"></i> Mar 2024 - Jan 2025</span>
+          <span><i class="far fa-flask"></i> Research Project</span>
+        </div>
+        <p>Nanoscale thorium dioxide, ThO$_2$, is the dominant form of thorium under conditions close to that in the natural environment.
+        One reason we were interested in the behaviour of nanoscale ThO$_2$ is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO$_2$.
+        Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations.</p>
+      </div>
     `
+    // ... your other projects
     // ... your other projects
   };
 
