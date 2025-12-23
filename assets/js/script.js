@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
         does not accept any new particles in its vicinity. Consequently, high deacivation makes it harder for new particles to attach in random spots.
         <br><br>
         The figure below illustrates the difference between an aggregate simulated with low and high deactivation, respectively.</p>
-        <br><br>
+        <br>
         <figure>
           <img src="assets/images/aggregates_comparison.png" alt="Aggregates with low and high inactivation probability, side-by-side. The aggregate generated with high inactivation probability is much more branched." class="fractal-aggregates-img0">
           <figcaption><i>Low inactivation probability (left) versus high (right). Visualised with OVITO<sup>2</sup></i>.</figcaption>
         </figure>
-        <br><br>
+        <br>
         <p>One use of simulations such as this one is that they allow us to calculate and model a quantity known as structure factor. The structure factor is a mathematical function describing the pattern in which particles are arranged. For aggregates of tiny particles (e.g. nanoparticles or molecules)
         this quantity is experimentally accessible with a method called small-angle X-ray scattering (SAXS). The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
         is that the mathematical parameters extracted from SAXS analysis are not always intuitively interpretable.
@@ -68,14 +68,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <br><br>
         At this time, the SAXS data collected on our thorium dioxides should not be shared publicly since it's not published yet. However, a large set of SAXS data collected on hydrated thorium dioxide allowed us to describe the morphology of this material in different environments. The simulations, very much like the ones shown above, 
         allowed me to validate results of SAXS analysis by computing structure factors. The next figure shows how significant the difference can be for structure factors of different aggregates. The data shown corresponds to the aggregates visualised in Fig. 1.</p>
-        <br><br>
+        <br>
         <figure>
           <img src="assets/images/aggregates_SF.png" alt="Structure factors for the aggregates described in the previous figure. The aggregate that exhibits more branching has a much smoother structure factor. The aggregate with less branching exhibits sharp negative peaks, or 'fringes'." class="fractal-aggregates-img1">
           <figcaption><i>Structure factors for the two aggregates. Calculated using Debyer<sup>3</sup><i>.</figcaption>
         </figure>
-        <br><br>
+        <br>
         <p>Check back in a few months and I hope to share a paper on the topic! In the meantime, I invite you to check out a demo version of my Porous Eden Mass Fractal Aggregate Simulation Framework via <a href="https://kramar-pemfa.streamlit.app/">my Streamlit-hosted app.</a></p>
-        <br><br>
+        <br>
         <p><sup>1 </sup> Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. https://doi.org/10.1016/j.physa.2018.07.061.
 </p>
         <p><sup>2 </sup><a href = "https://www.ovito.org/">www.ovito.org</a></p>
