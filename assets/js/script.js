@@ -41,7 +41,35 @@ document.addEventListener('DOMContentLoaded', () => {
           <span><i class="far fa-calendar"></i> Jul 2025 - Dec 2025</span>
           <span><i class="far fa-flask"></i> Modelling and Simulations</span>
         </div>
-        <p>This is a test without images.</p>
+        <p>Particle aggregation is an incredibly common phenomenon. Bits of soot coming together in exhaust pipes is particle aggregation. Uncontrollable cell growth in cancerous tumours also resembles particle aggregation.
+        Aggregation tends to cause formation of fractal structures - that is, structures that look the same regardless of magnification. In other words, it is not unusual for the aggregate to resemble the individual particles it's made of.
+        We call this property self-similarity. There has been a lot of interest in algorithms that can accurately model aggregation.</p>
+        <p>One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by Guesnet and colleagues (2019). The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
+        This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an inactivation parameter, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
+        does not accept any new particles in its vicinity. Consequently, high deacivation makes it harder for new particles to attach in random spots.</p>
+        <p>The figure below illustrates the difference between an aggregate simulated with low and high deactivation, respectively.</p>
+        <figure>
+          <img src="assets/images/aggregates_comparison.png" alt="Aggregates with low and high inactivation probability, side-by-side. The aggregate generated with high inactivation probability is much more branched." class="fractal-aggregates-img0">
+          <figcaption>Low inactivation probability (left) versus high (right). Visualised with OVITO<sup>2</sup>.</figcaption>
+        </figure>
+        <p>One use of simulations such as this one is that they allow us to calculate and model a quantity known as structure factor. The structure factor is a mathematical function describing the pattern in which particles are arranged. For aggregates of tiny particles (e.g. nanoparticles or molecules)
+        this quantity is experimentally accessible with a method called small-angle X-ray scattering (SAXS). The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
+        is that the mathematical parameters extracted from SAXS analysis are not always intuitively interpretable.</p>
+        <p>These are the exact reasons I turned towards the Porous Eden model and implemented Guesnet's algorithm for simulations.</p>
+        <p>I studied aggregation in hydrated thorium dioxides. One motivation to study thorium dioxide is the rising interest to thorium-based nuclear energy cycle. Nuclear energy generates waste. Having waste on your hands necessitates having a plan for how to deal with a potential leak. In the natural environment, 
+        thorium easily forms hydrated oxides. The mobility of thorium in the environment - i.e. how easily will it dissolve and get carried by natural waters - depends on its morphology. Morphology is best understood as physical forms: shapes and sizes of particles. We want to describe shapes and sizes, and we want to know
+        if particles stick together, because that will determine their mobility and inform our waste management efforts.</p>
+        <p>At this time, the SAXS data collected on our thorium dioxides should not be shared publicly since it's not published yet. However, a large set of SAXS data collected on hydrated thorium dioxide allowed us to describe the morphology of this material in different environments. The simulations, very much like the ones shown above, 
+        allowed me to validate results of SAXS analysis by computing structure factors. The next figure shows how significant the difference can be for structure factors of different aggregates. The data shown corresponds to the aggregates visualised in Fig. 1.</p>
+        <figure>
+          <img src="assets/images/aggregates_SF.png" alt="Structure factors for the aggregates described in the previous figure. The aggregate that exhibits more branching has a much smoother structure factor. The aggregate with less branching exhibits sharp negative peaks, or 'fringes'." class="fractal-aggregates-img1">
+          <figcaption>Structure factors for the two aggregates. Calculated using Debyer<sup>3</sup>.</figcaption>
+        </figure>
+        <p>Check back in a few months and I hope to share a paper on the topic! In the meantime, I invite you to check out a demo version of my Porous Eden Mass Fractal Aggregate Simulation Framework via <a href="kramar-pemfa.streamlit.app">my Streamlit-hosted app.</a></p>
+        <p><sup>1 </sup> Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. https://doi.org/10.1016/j.physa.2018.07.061.
+</p>
+        <p><sup>2 </sup><a><href = "https://www.ovito.org/">www.ovito.org/</a></p>
+        <p><sup>3 </sup><a><href = "https://debyer.readthedocs.io/en/latest/">debyer.readthedocs.io/en/latest/ by wojdyr</a></p>
       </div>
     `,
     "thorium-phosphates": `
