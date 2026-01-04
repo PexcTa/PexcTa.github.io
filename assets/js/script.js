@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Aggregation tends to cause formation of fractal structures - that is, structures that look the same regardless of magnification. In other words, it is not unusual for the aggregate to resemble the individual particles it's made of.
         We call this property self-similarity. There has been a lot of interest in algorithms that can accurately model aggregation.
         <br><br>
-        One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by Guesnet and colleagues (2019). The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
+        One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by <span class="tooltip"> Guesnet and colleagues (2019) <span class="tooltip-text"> test tooltip text </span> </span>. The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
         This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an inactivation parameter, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
         does not accept any new particles in its vicinity. Consequently, high deacivation makes it harder for new particles to attach in random spots.
         <br><br>
@@ -93,7 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
         One reason we were interested in the behaviour of nanoscale ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO<sub>2</sub>.
         Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations. Phosphate is a very common anion and an agricultural effluent. Historically,
         phosphate has been actively used to treat nuclear waste to sequester high-valent actinides. In this work, carried out at Lomonosov Moscow State University, I explored some of the 
-        chemistry in the thorium dioxide - phosphate system.</p>
+        chemistry in the thorium dioxide - phosphate system.<br></br>
+        We found that ThO<sub>2</sub>, exposed to high concentrations of phosphate, reformed into an unknown phase with a high water content. The structure of the phase could not be immediately determined. One way to understand a phase is to study what else can be made 
+        from it. I heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph></p> 
+        The key
       </div>
     `
     // ... your other projects
@@ -135,3 +138,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
