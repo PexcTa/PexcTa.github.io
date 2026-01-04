@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an <span class="tooltip">inactivation parameter<span class="tooltip-text">Takes values from 0 to 1.</span></span>, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
         does not accept any new particles in its vicinity. A particle cannot be deactivated if it is the last active particle. With high deactivation, only a handful of particles are active at any given time, and therefore attachment happens preferentially, creating branched structures.
         <br><br>
-        The figure below illustrates the difference between an <span class="tooltip"aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">low<span class="tooltip-text"> p = 0.00 </span></span> and <span class="tooltip"aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">high<span class="tooltip-text"> p = 0.95 </span></span> deactivation, respectively.</p>
+        The figure below illustrates the difference between an <span class="tooltip"aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">low<span class="tooltip-text"> p = 0.00 </span></span> and <span class="tooltip">high<span class="tooltip-text"> p = 0.95 </span></span> deactivation, respectively.</p>
         <br>
         <figure>
           <img src="assets/images/aggregates_comparison.png" alt="Aggregates with low and high inactivation probability, side-by-side. The aggregate generated with high inactivation probability is much more branched." class="fractal-aggregates-img0">
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </figure>
         <br>
         <p>One use of simulations such as this one is that they allow us to calculate and model a quantity known as structure factor. The structure factor is a mathematical function describing the pattern in which particles are arranged. For aggregates of tiny particles (e.g. nanoparticles or molecules)
-        this quantity is experimentally accessible with a method called small-angle X-ray scattering (SAXS). The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
+        this quantity is experimentally accessible with a method called <span class="tooltip">small-angle X-ray scattering (SAXS)<span class="tooltip-text">Primarily sensitive to particle size and shape, the technique relies on elastic scattering of X-rays by the electrons in the sample.</span></span>. The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
         is that the mathematical parameters extracted from SAXS analysis are not always intuitively interpretable.
         <br><br>
         These are the exact reasons I turned towards the Porous Eden model and implemented Guesnet's algorithm for simulations.
