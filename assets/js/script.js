@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span><i class="far fa-calendar"></i> Mar 2024 - Jan 2025</span>
           <span><i class="far fa-flask"></i> Research Project</span>
         </div>
-        <h3>A trip to the 60s</h3>
+        <h3>All the Phosphate Phases</h3>
         <p>Nanoscale thorium dioxide, ThO<sub>2</sub>, is the dominant form of thorium under conditions close to that in the natural environment.
         One reason we were interested in the behaviour of nanoscale ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO<sub>2</sub>.
         Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations. Phosphate is a very common anion and an agricultural effluent. Historically,
@@ -104,20 +104,26 @@ document.addEventListener('DOMContentLoaded', () => {
         </figure>
         <br>
         <p>One way to understand a phase is to try and convert it to a better defined product, then work retroactively. We heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph>. As I reviewed the data, I realised
-        that the final product obtained after thermal treatment was, in fact, a mix of dry crystalline phosphates characterised in the 1960s. 
+        that the final product obtained after thermal treatment was, in fact, a mix of dry crystalline phosphates characterised in the 1970-1980s. 
         It followed that our hydrated phase is a previously unknown precursor phase with a similar chemical composition. 
         <emph>In other words, we have shown that even under environmental conditions there is a direct pathway from thorium dioxide to stable crystalline phosphates.</emph></p> 
         <br>
         <figure>
           <img src="assets/images/thorium-phos-sem-eds.png" alt="Scanning electron microscopy images and XRD patterns for the materials obtained following heating to 1000 degrees Celcius." class="thorium-phos-img1">
-          <figcaption><i>Color-coded: SEM and XRD for ThPhos-5 (yellow) and ThPhos-8 (blue). XRD patterns are plotted with patterns calculated for the phases described in 1960s by Matković and coworkers. The major products are different.</i>.</figcaption>
+          <figcaption><i>Color-coded: SEM and XRD for ThPhos-5 (yellow) and ThPhos-8 (blue). XRD patterns are plotted with patterns calculated for the phases described in 1960s by Matković and coworkers. The major products are different.</i></figcaption>
         </figure>
         <br>
         <p>The two calcined phases are shown in the figure above. Both were composed of compounds described by B. Matković and coworkers.<sup>2,3</sup> 
         I used Rietveld refinement to confirm these assignments, and was able to show that the pH used to prepare the intermediate phase determined the identity of the major calcination product. There remained, however, a key question. XRD, shown earlier, indicated that the hydrated intermediate phosphate phase
         looks largely the same regardless of pH: the morphology might have been different, but the peak positions were the same, equally similar to grayite. How was it that the hydrated intermediate then reformed into distinct products during calcination? </p>
+        <br>
         <h3>Exploring the Hydrated Phase</h3>
-        
+        <br>
+        <h3>Bibliography</h3>
+        <p><sup>1 </sup>Dooley Jr, J.; Hathaway, J. Two Occurrences of Thorium-Bearing Minerals with Rhabdophane-like Structure. US Geological Survey Professional Paper 1961, 424, 339–341.</p>
+        <p><sup>2 </sup>Matković, B.; Kojić-Prodić, B.; Šlijukić, M.; Topić, M.; Willett, R. D.; Pullen, F. The Crystal Structure of a New Ferroelectric Compound, NaTh2(PO4)3. Inorganica Chimica Acta 1970, 4, 571–576.
+<a href = "https://doi.org/10.1016/S0020-1693(00)93352-8">https://doi.org/10.1016/S0020-1693(00)93352-8</a></p>
+        <p><sup>3 </sup>Galešić, N.; Matković, B.; Topić, M.; Coffou, E.; Šljukić, M. The Crystal Structure of Disodium Thorium Bisphosphate, Na2Th(PO4)2. Croatica Chemica Acta 1984, 57 (4), 597–608.</p>
       </div>
     `
     // ... your other projects

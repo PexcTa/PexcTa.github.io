@@ -21,18 +21,19 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <!-- About Section (default view) -->
     <section id="about" class="tab-content active">
       <div class="container">
-        <img src="assets/images/profilePic.png" alt="Boris Kramar" class="profile-img">
-        <h1>Boris V. Kramar, PhD</h1>
-        <p class="tagline">Open to work. Available immediately. Located in Australia. </p>
-        
+        <!-- NEW FLEX CONTAINER FOR PROFILE -->
+        <div class="profile-header">
+          <img src="assets/images/profilePic.png" alt="Boris Kramar" class="profile-img">
+          <div class="profile-text">
+            <h1>Boris V. Kramar, PhD</h1>
+            <p class="tagline">Open to work. Available immediately. Located in Australia. </p>
+          </div>
+        </div>
         <div class="bio">
           <p>Chemist by training. Attended Northwestern for PhD, completed a postdoc at Moscow State. Used X-ray methods to study MOFs and solid actinide phases. Current interests: analytical instrumentation, characterisation of materials, Bayesian inference, data analysis. Particularly interested in opportunities in research, development, applications and analytical methods. Check out my projects to learn more about my work.</p>
-          
           <div class="skills">
             <span>Quantitative Data Analysis</span>
             <span>Python</span>
@@ -42,7 +43,6 @@
             <span>X-ray Methods</span>
             <span>Materials Chemistry</span>
           </div>
-          
           <a href="mailto:borisvokramar@gmail.com" class="btn">Get in touch</a>
         </div>
       </div>
