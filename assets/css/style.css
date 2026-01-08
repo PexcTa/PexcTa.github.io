@@ -72,8 +72,9 @@ main {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px; /* Increased from 1200px */
   margin: 0 auto;
+  padding: 0 2rem; /* Added horizontal padding for edge spacing */
 }
 
 .tab-content {
@@ -109,7 +110,9 @@ main {
 }
 
 .bio {
-  max-width: 700px;
+  max-width: 100%; /* Removes any internal width limits */
+  margin: 0 auto; /* Centers content */
+  padding: 0 1rem; /* Adds inner padding */
 }
 
 .skills {
