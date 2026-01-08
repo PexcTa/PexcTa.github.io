@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phosphate has been actively used to treat nuclear waste to sequester high-valent actinides. In this work, carried out at Lomonosov Moscow State University, I explored some of the 
         chemistry in the thorium dioxide - phosphate system.<br></br>
         We found that ThO<sub>2</sub>, exposed to high concentrations of phosphate, reformed into an unknown phase with a high water content. The structure of the phase could not be immediately determined. One way to understand a phase is to study what else can be made 
-        from it. I heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph></p> 
-        The key
+        from it. We heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph>. As I reviewed the data, I realised
+        that the final product obtained after thermal treatment was, in fact, a mix of dry crystalline phosphates characterised in the 1960s. It followed that our hydrated phase is a previously unknown precursor phase with a similar chemical composition. <emph>In other words, we have shown that even under environmental conditions there is a direct pathway from thorium dioxide to stable crystalline phosphates.</p> 
       </div>
     `
     // ... your other projects
