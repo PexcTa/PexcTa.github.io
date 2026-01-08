@@ -89,14 +89,35 @@ document.addEventListener('DOMContentLoaded', () => {
           <span><i class="far fa-calendar"></i> Mar 2024 - Jan 2025</span>
           <span><i class="far fa-flask"></i> Research Project</span>
         </div>
+        <h3>A trip to the 60s</h3>
         <p>Nanoscale thorium dioxide, ThO<sub>2</sub>, is the dominant form of thorium under conditions close to that in the natural environment.
         One reason we were interested in the behaviour of nanoscale ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO<sub>2</sub>.
         Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations. Phosphate is a very common anion and an agricultural effluent. Historically,
         phosphate has been actively used to treat nuclear waste to sequester high-valent actinides. In this work, carried out at Lomonosov Moscow State University, I explored some of the 
-        chemistry in the thorium dioxide - phosphate system.<br></br>
-        We found that ThO<sub>2</sub>, exposed to high concentrations of phosphate, reformed into an unknown phase with a high water content. The structure of the phase could not be immediately determined. One way to understand a phase is to study what else can be made 
-        from it. We heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph>. As I reviewed the data, I realised
-        that the final product obtained after thermal treatment was, in fact, a mix of dry crystalline phosphates characterised in the 1960s. It followed that our hydrated phase is a previously unknown precursor phase with a similar chemical composition. <emph>In other words, we have shown that even under environmental conditions there is a direct pathway from thorium dioxide to stable crystalline phosphates.</p> 
+        chemistry in the thorium dioxide - phosphate system. Unexpectedly, we were able to expand on work done as far back as 1960s.<br></br>
+        We found that ThO<sub>2</sub>, exposed to high concentrations of phosphate, reformed into an unknown phase with a high water content. The structure of the phase could not be immediately determined. 
+        The closest match based on the X-ray diffraction (XRD) pattern was <emph>grayite</emph>, a thorium-bearing mineral described by Dooley and Hathaway in a paper from 1961.<sup>1</sup> The match was not perfect, but appeared to be close enough. Unfortunately, we could not locate more recent reports, and the structure of grayite was never solved.</p>
+        <br>
+        <figure>
+          <img src="assets/images/thorium-phos-xrd-tem.png" alt="XRD patterns showing the similarity between experimental data and grayite pattern; transmission electron microscopy images of two hydrated phosphate samples." class="thorium-phos-img0">
+          <figcaption><i>(left) Comparison of XRD patterns with key peaks highlighted in red dashed lines. The ThPhos-8 and ThPhos-5 labels refer to samples obtained at pH of 8 and 5, respectively. These samples are shown in TEM images (center, right). Both are nanosized.</i>.</figcaption>
+        </figure>
+        <br>
+        <p>One way to understand a phase is to try and convert it to a better defined product, then work retroactively. We heated the phase in air to a maximum temperature of 1000 degrees Celcius and recorded structural information using <emph>X-ray diffraction</emph> and <emph>thermal gravimetric analysis</emph>. As I reviewed the data, I realised
+        that the final product obtained after thermal treatment was, in fact, a mix of dry crystalline phosphates characterised in the 1960s. 
+        It followed that our hydrated phase is a previously unknown precursor phase with a similar chemical composition. 
+        <emph>In other words, we have shown that even under environmental conditions there is a direct pathway from thorium dioxide to stable crystalline phosphates.</emph></p> 
+        <br>
+        <figure>
+          <img src="assets/images/thorium-phos-sem-eds.png" alt="Scanning electron microscopy images and XRD patterns for the materials obtained following heating to 1000 degrees Celcius." class="thorium-phos-img1">
+          <figcaption><i>Color-coded: SEM and XRD for ThPhos-5 (yellow) and ThPhos-8 (blue). XRD patterns are plotted with patterns calculated for the phases described in 1960s by Matković and coworkers. The major products are different.</i>.</figcaption>
+        </figure>
+        <br>
+        <p>The two calcined phases are shown in the figure above. Both were composed of compounds described by B. Matković and coworkers.<sup>2,3</sup> 
+        I used Rietveld refinement to confirm these assignments, and was able to show that the pH used to prepare the intermediate phase determined the identity of the major calcination product. There remained, however, a key question. XRD, shown earlier, indicated that the hydrated intermediate phosphate phase
+        looks largely the same regardless of pH: the morphology might have been different, but the peak positions were the same, equally similar to grayite. How was it that the hydrated intermediate then reformed into distinct products during calcination? </p>
+        <h3>Exploring the Hydrated Phase</h3>
+        
       </div>
     `
     // ... your other projects
