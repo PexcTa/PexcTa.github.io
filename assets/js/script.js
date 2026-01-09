@@ -125,8 +125,23 @@ document.addEventListener('DOMContentLoaded', () => {
         The methods confirmed our initial guesses that the thorium is surrounded by oxygen atoms and other species are present in channels and cavities between the thorium atoms. Nevertheless, EXAFS and PDF were still blind to the causes of divergent structural evolution during calcination. Changes in pH did <emph>something</emph> to this material - something that was not reflected in the structure,
         but was wholly responsible for thermal behaviour.</p>
         <br><br>
-        <p>The key detail was not a periodic, well-defined structural feature. X-ray methods could not "see" it. So we turned to other methods: Fourier-transform Infrared Spectroscopy <b>(FTIR)</b> and Nuclear Magnetic Resonance <b>(NMR)</b> spectrometry.</p>
+        <p>This key detail was not a periodic, well-defined structural feature. X-ray methods could not "see" it. So we turned to other methods: Nuclear Magnetic Resonance <b>(NMR)</b> spectrometry and Fourier-transform Infrared Spectroscopy <b>(FTIR)</b>.</p>
+        <br><br>
+        <p>NMR was used to definitively demonstrate that the phosphate (PO<sub>4</sub><sup>3-</sup>) groups in the hydrated sample were just that: <i>monomeric</i> phosphates, i.e. they did not form extended chains either before or after calcination.
+        There were no major differences between the hydrated phases obtained at different pH values.</p>
+        <br><br>
+        <p>FTIR told us more about these phosphate groups, as well as the water. The environment observed by phosphate groups in the higher pH sample (ThPhos-8) was richer, more diverse; water, too, was present in a wider variety of conformations.</p>
         <br>
+        <p>Armed with these insights, we went back to the structural analysis. We noted that one of the final calcined phases, <b>NaTh<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub></b>, contained long channels; the material could be described as a framework. 
+        Our X-ray analysis results agreed that while the hydrated phases aren't quite the same as this crystalline material, they are similar. We supposed that the channels in the hydrated phase could house an excess of phosphate, sodium and water; these reagents, invisible to X-ray methods, 
+        would be consumed during calcination, severely affecting the outcome of the calcination procedure. We tested this hypothesis by altering synthetic conditions further and checking the elemental composition of the samples using energy-dispersive spectroscopy (EDS).</p>
+        <br><br>
+        <p>Once again, the <b>structure</b> of the intermediate phase was found to be consistent across the entire range of studied conditions. However, like a sponge
+        , it absorbed extra reagents from the solution; during calcination, these extra trapped reagents pushed it towards a favoured major product.
+        This can be thought of as <b>chemical memory</b>: the hydrated phase "remembers" its original synthetic conditions, and the original synthetic conditions guide structural evolution during heating.</p>
+        <h3>Conclusions</h3>
+        <p><b>Thorium dioxide in the natural environment rich in phosphate may evolve into a hydrated phase, which, if aged, may form a stable, crystalline compound.</b></p>
+        <p><b>A new synthetic pathway for a crystalline thorium-based phase has been identified. The crystalline phase is a ceramic that can be used to immobilise thorium or other radiotoxic elements.</b></p>
         <h3>Bibliography</h3>
         <p><sup>1 </sup>Dooley Jr, J.; Hathaway, J. Two Occurrences of Thorium-Bearing Minerals with Rhabdophane-like Structure. US Geological Survey Professional Paper 1961, 424, 339–341.</p>
         <p><sup>2 </sup>Matković, B.; Kojić-Prodić, B.; Šlijukić, M.; Topić, M.; Willett, R. D.; Pullen, F. The Crystal Structure of a New Ferroelectric Compound, NaTh2(PO4)3. Inorganica Chimica Acta 1970, 4, 571–576.
