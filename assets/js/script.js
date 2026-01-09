@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <p>Particle aggregation is an incredibly common phenomenon. Bits of soot coming together in exhaust pipes is particle aggregation. Uncontrollable cell growth in cancerous tumours also resembles particle aggregation.
         Aggregation tends to cause formation of fractal structures - that is, structures that look the same regardless of magnification. In other words, it is not unusual for the aggregate to resemble the individual particles it's made of.
-        We call this property self-similarity. There has been a lot of interest in algorithms that can accurately model aggregation.
+        Fractal structures exhibit <i>self-similarity</i>. There has been a lot of interest in algorithms that can accurately model aggregation of particles into fractal structures.
         <br><br>
         One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by <span class="tooltip"> Guesnet and colleagues (2019) <span class="tooltip-text">  Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. </span> </span>. The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
         This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an <span class="tooltip">inactivation parameter<span class="tooltip-text">Takes values from 0 to 1.</span></span>, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
         does not accept any new particles in its vicinity. A particle cannot be deactivated if it is the last active particle. With high deactivation, only a handful of particles are active at any given time, and therefore attachment happens preferentially, creating branched structures.
         <br><br>
-        The figure below illustrates the difference between an <span class="tooltip"aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">low<span class="tooltip-text"> p = 0.00 </span></span> and <span class="tooltip">high<span class="tooltip-text"> p = 0.95 </span></span> deactivation, respectively.</p>
+        The figure below illustrates the difference between an <span class="tooltip">aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">low<span class="tooltip-text"> p = 0.00 </span></span> and <span class="tooltip">high<span class="tooltip-text"> p = 0.95 </span></span> deactivation, respectively.</p>
         <br>
         <figure>
           <img src="assets/images/aggregates_comparison.png" alt="Aggregates with low and high inactivation probability, side-by-side. The aggregate generated with high inactivation probability is much more branched." class="fractal-aggregates-img0">
