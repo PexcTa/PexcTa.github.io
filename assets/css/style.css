@@ -404,6 +404,63 @@ body .tooltip:hover .tooltip-text {
   opacity: 1 !important;
 }
 
+/* UPDATE YOUR EXISTING TOOLTIP CSS WITH THESE ADDITIONS */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dashed var(--primary);
+  cursor: help;
+  /* Add this to allow tooltips to escape container */
+  z-index: 2200;
+}
+
+/* New edge detection positioning */
+.tooltip:hover .tooltip-text {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* When near right edge - align right */
+.tooltip.right-edge:hover .tooltip-text {
+  left: auto;
+  right: 0;
+  transform: none;
+  margin-left: 0;
+}
+
+.tooltip.right-edge .tooltip-text::after {
+  left: auto;
+  right: 10px;
+  margin-left: 0;
+}
+
+/* When near left edge - align left */
+.tooltip.left-edge:hover .tooltip-text {
+  left: 0;
+  transform: none;
+  margin-left: 0;
+}
+
+.tooltip.left-edge .tooltip-text::after {
+  left: 10px;
+  right: auto;
+  margin-left: 0;
+}
+
+/* Bottom edge detection */
+.tooltip.bottom-edge:hover .tooltip-text {
+  bottom: auto;
+  top: 125%;
+}
+
+.tooltip.bottom-edge .tooltip-text::after {
+  top: -10px;
+  bottom: auto;
+  border-color: transparent transparent var(--dark) transparent;
+  transform: rotate(180deg);
+}
+
 .modal-content {
   position: relative;
   z-index: 2100 !important; /* Must be higher than tooltip's parent */
@@ -480,7 +537,7 @@ header {
 /* Container inside header matches main content */
 header .container {
   max-width: 1400px; /* Must match your main .container width */
-  padding: 0 3rem;   /* Must match main content padding */
+  padding: 0 2rem;   /* Must match main content padding */
   margin: 0 auto;
 }
 
