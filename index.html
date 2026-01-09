@@ -10,16 +10,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <script src="assets/js/script.js"></script>
-<body>
-  <header>
+
+<header>
+  <div class="container"> <!-- ADD CONTAINER HERE -->
     <nav>
       <div class="logo">Boris Kramar</div>
       <ul class="nav-tabs">
         <li><a href="#about" class="active" data-tab="about">About</a></li>
         <li><a href="#projects" data-tab="projects">Projects</a></li>
-        <li><a href="Kramar_CurriculumVitae_Dec2025.pdf" target="_blank">Curriculum Vitae</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
       </ul>
+      <button id="lang-toggle" aria-label="Toggle language">ES</button>
     </nav>
+  </div> <!-- Close container -->
+</header>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Boris Kramar</div>
+        <ul class="nav-tabs">
+          <li><a href="#about" class="active" data-tab="about">About</a></li>
+          <li><a href="#projects" data-tab="projects">Projects</a></li>
+          <li><a href="Kramar_CurriculumVitae_Dec2025.pdf" target="_blank">Curriculum Vitae</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section id="about" class="tab-content active">

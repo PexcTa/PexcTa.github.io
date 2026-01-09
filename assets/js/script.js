@@ -89,14 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
           <span><i class="far fa-calendar"></i> Mar 2024 - Jan 2025</span>
           <span><i class="far fa-flask"></i> Research Project</span>
         </div>
+        <i>The figures presented below are reproduced from the author's manuscript published<sup>1</sup> in Dalton Transactions. Copyright Royal Society of Chemistry, 2025.</i>
         <h3>All the Phosphate Phases</h3>
-        <p>Nanoscale thorium dioxide, ThO<sub>2</sub>, is the dominant form of thorium under conditions close to that in the natural environment.
-        One reason we were interested in the behaviour of nanoscale ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic plutonium dioxide, PuO<sub>2</sub>.
+        <p>Nanoscale thorium dioxide, ThO<sub>2</sub>, is the dominant form of <span class="tooltip">thorium<span class="tooltip-text">A chemical element with the atomic number 90; of interest due to the emerging thorium fuel cycle. Weakly radioactive.</span></span> under conditions close to those in the natural environment.
+        One reason we were interested in the behaviour of <span class="tooltip">nanoscale<span class="tooltip-text">Particles under 100 nm in size.</span></span> ThO<sub>2</sub> is that it can be used to predict behaviour of far more toxic <span class="tooltip">plutonium<span class="tooltip-text">A chemical element with atomic number 94. Strongly radioactive, toxic, common component of nuclear waste.</span></span> dioxide, PuO<sub>2</sub>.
         Nanoscale oxides easily migrate in the natural environment and may undergo chemical transformations. Phosphate is a very common anion and an agricultural effluent. Historically,
         phosphate has been actively used to treat nuclear waste to sequester high-valent actinides. In this work, carried out at Lomonosov Moscow State University, I explored some of the 
         chemistry in the thorium dioxide - phosphate system. Unexpectedly, we were able to expand on work done as far back as 1960s.<br></br>
         We found that ThO<sub>2</sub>, exposed to high concentrations of phosphate, reformed into an unknown phase with a high water content. The structure of the phase could not be immediately determined. 
-        The closest match based on the X-ray diffraction (XRD) pattern was <emph>grayite</emph>, a thorium-bearing mineral described by Dooley and Hathaway in a paper from 1961.<sup>1</sup> The match was not perfect, but appeared to be close enough. Unfortunately, we could not locate more recent reports, and the structure of grayite was never solved.</p>
+        The closest match based on the X-ray diffraction (XRD) pattern was <emph>grayite</emph>, a thorium-bearing mineral described by Dooley and Hathaway in a paper from 1961.<sup>2</sup> The match was not perfect, but appeared to be close enough. Unfortunately, we could not locate more recent reports, and the structure of grayite was never solved.</p>
         <br>
         <figure>
           <img src="assets/images/thorium-phos-xrd-tem.png" alt="XRD patterns showing the similarity between experimental data and grayite pattern; transmission electron microscopy images of two hydrated phosphate samples." class="thorium-phos-img0">
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <figcaption><i>Color-coded: SEM and XRD for ThPhos-5 (yellow) and ThPhos-8 (blue). XRD patterns are plotted with patterns calculated for the phases described in 1960s by Matković and coworkers. The major products are different.</i></figcaption>
         </figure>
         <br>
-        <p>The two calcined phases are shown in the figure above. Both were composed of compounds described by B. Matković and coworkers.<sup>2,3</sup> 
+        <p>The two calcined phases are shown in the figure above. Both were composed of compounds described by B. Matković and coworkers.<sup>3,4</sup> 
         I used Rietveld refinement to confirm these assignments, and was able to show that the pH used to prepare the intermediate phase determined the identity of the major calcination product. There remained, however, a key question. XRD, shown earlier, indicated that the hydrated intermediate phosphate phase
         looks largely the same regardless of pH: the morphology might have been different, but the peak positions were the same, equally similar to grayite. How was it that the hydrated intermediate then reformed into distinct products during calcination? </p>
         <br>
@@ -124,29 +125,37 @@ document.addEventListener('DOMContentLoaded', () => {
         extensive Fourier signal processing, wavelet transform and error analysis. PDF analysis, done by my collaborators Dmitry Tsymbarenko and Maria Shaulskaya, revealed that the hydrated phase was similar in structure to one of the compounds obtained post-calcination; this was revealed through modelling and Pearson correlation analysis.
         The methods confirmed our initial guesses that the thorium is surrounded by oxygen atoms and other species are present in channels and cavities between the thorium atoms. Nevertheless, EXAFS and PDF were still blind to the causes of divergent structural evolution during calcination. Changes in pH did <emph>something</emph> to this material - something that was not reflected in the structure,
         but was wholly responsible for thermal behaviour.</p>
-        <br><br>
+        <br>
         <p>This key detail was not a periodic, well-defined structural feature. X-ray methods could not "see" it. So we turned to other methods: Nuclear Magnetic Resonance <b>(NMR)</b> spectrometry and Fourier-transform Infrared Spectroscopy <b>(FTIR)</b>.</p>
-        <br><br>
+        <br>
         <p>NMR was used to definitively demonstrate that the phosphate (PO<sub>4</sub><sup>3-</sup>) groups in the hydrated sample were just that: <i>monomeric</i> phosphates, i.e. they did not form extended chains either before or after calcination.
         There were no major differences between the hydrated phases obtained at different pH values.</p>
-        <br><br>
+        <br>
         <p>FTIR told us more about these phosphate groups, as well as the water. The environment observed by phosphate groups in the higher pH sample (ThPhos-8) was richer, more diverse; water, too, was present in a wider variety of conformations.</p>
         <br>
         <p>Armed with these insights, we went back to the structural analysis. We noted that one of the final calcined phases, <b>NaTh<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub></b>, contained long channels; the material could be described as a framework. 
         Our X-ray analysis results agreed that while the hydrated phases aren't quite the same as this crystalline material, they are similar. We supposed that the channels in the hydrated phase could house an excess of phosphate, sodium and water; these reagents, invisible to X-ray methods, 
         would be consumed during calcination, severely affecting the outcome of the calcination procedure. We tested this hypothesis by altering synthetic conditions further and checking the elemental composition of the samples using energy-dispersive spectroscopy (EDS).</p>
-        <br><br>
+        <br>
         <p>Once again, the <b>structure</b> of the intermediate phase was found to be consistent across the entire range of studied conditions. However, like a sponge
         , it absorbed extra reagents from the solution; during calcination, these extra trapped reagents pushed it towards a favoured major product.
-        This can be thought of as <b>chemical memory</b>: the hydrated phase "remembers" its original synthetic conditions, and the original synthetic conditions guide structural evolution during heating.</p>
+        This can be thought of as <b>chemical memory</b>: the hydrated phase "remembers" its original synthetic conditions, and the original synthetic conditions guide structural evolution during heating. The figure below summarises the study.</p>
+        <br>
+        <figure>
+          <img src="assets/images/thorium-phos-scheme.png" alt="A scheme summarising the reforming of thorium dioxide into hydrated phase and subsequent calcination to crystalline ceramics. pH of the first step influences outcome of the second step." class="thorium-phos-img2">
+          <figcaption><i>Thorium dioxide in a phosphate solution reforms into the hydrated phase. The structure of the solid part of the hydrated phase is the same regardless of pH, but the channels are filled with variable chemical species. During calcination, the hydrated phase reforms into different crystalline phosphates.</i></figcaption>
+        </figure>
+        <br>
         <h3>Conclusions</h3>
-        <p><b>Thorium dioxide in the natural environment rich in phosphate may evolve into a hydrated phase, which, if aged, may form a stable, crystalline compound.</b></p>
-        <p><b>A new synthetic pathway for a crystalline thorium-based phase has been identified. The crystalline phase is a ceramic that can be used to immobilise thorium or other radiotoxic elements.</b></p>
+        <p>Thorium dioxide in the natural environment rich in phosphate may evolve into a hydrated phase, which, if aged, may form a stable, crystalline compound.</p>
+        <p>A new synthetic pathway for a crystalline thorium-based phase has been identified. The crystalline phase is a ceramic that can be used to immobilise thorium or other radiotoxic elements.</p>
+        <br>
         <h3>Bibliography</h3>
-        <p><sup>1 </sup>Dooley Jr, J.; Hathaway, J. Two Occurrences of Thorium-Bearing Minerals with Rhabdophane-like Structure. US Geological Survey Professional Paper 1961, 424, 339–341.</p>
-        <p><sup>2 </sup>Matković, B.; Kojić-Prodić, B.; Šlijukić, M.; Topić, M.; Willett, R. D.; Pullen, F. The Crystal Structure of a New Ferroelectric Compound, NaTh2(PO4)3. Inorganica Chimica Acta 1970, 4, 571–576.
+        <p><sup>1 </sup>Kramar, B. V.; Plakhova, T. V.; Kuzenkova, A. S.; Trigub, A. L.; Svetogorov, R. D.; Shiryaev, A. A.; Nevolin, I. M.; Yapryntsev, A. D.; Baranchikov, A. E.; Peters, G. S.; Yapaskurt, V. O.; Egorov, A. V.; Kostyukov, I. A.; Shaulskaya, M. D.; Tsymbarenko, D. M.; Romanchuk, A. Y.; Kalmykov, S. N. Formation of a New Hydrated Sodium–Thorium Phosphate from Thorium Dioxide and Its Subsequent Phase Evolution. Dalton Trans. 2025, 54 (18), 7360–7375. <a href = "https://doi.org/10.1039/D5DT00276A">https://doi.org/10.1039/D5DT00276A</a>.</p>
+        <p><sup>2 </sup>Dooley Jr, J.; Hathaway, J. Two Occurrences of Thorium-Bearing Minerals with Rhabdophane-like Structure. US Geological Survey Professional Paper 1961, 424, 339–341.</p>
+        <p><sup>3 </sup>Matković, B.; Kojić-Prodić, B.; Šlijukić, M.; Topić, M.; Willett, R. D.; Pullen, F. The Crystal Structure of a New Ferroelectric Compound, NaTh2(PO4)3. Inorganica Chimica Acta 1970, 4, 571–576.
 <a href = "https://doi.org/10.1016/S0020-1693(00)93352-8">https://doi.org/10.1016/S0020-1693(00)93352-8</a></p>
-        <p><sup>3 </sup>Galešić, N.; Matković, B.; Topić, M.; Coffou, E.; Šljukić, M. The Crystal Structure of Disodium Thorium Bisphosphate, Na2Th(PO4)2. Croatica Chemica Acta 1984, 57 (4), 597–608.</p>
+        <p><sup>4 </sup>Galešić, N.; Matković, B.; Topić, M.; Coffou, E.; Šljukić, M. The Crystal Structure of Disodium Thorium Bisphosphate, Na2Th(PO4)2. Croatica Chemica Acta 1984, 57 (4), 597–608.</p>
       </div>
     `
     // ... your other projects

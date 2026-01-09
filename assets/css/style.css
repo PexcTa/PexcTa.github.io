@@ -42,8 +42,6 @@ nav {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
-  margin: 0 auto; /* Centers content */
-  padding: 0 1rem; /* Adds inner padding */
 }
 
 .nav-tabs {
@@ -467,5 +465,70 @@ body .tooltip:hover .tooltip-text {
   
   .profile-text .tagline {
     font-size: 1.125rem;
+  }
+}
+
+/* ============== HEADER ALIGNMENT ============== */
+header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container inside header matches main content */
+header .container {
+  max-width: 1400px; /* Must match your main .container width */
+  padding: 0 3rem;   /* Must match main content padding */
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0; /* Vertical padding only */
+}
+
+.logo {
+  font-size: 1.75rem; /* Slightly larger for impact */
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Keep nav links on the right */
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+#lang-toggle {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+#lang-toggle:hover {
+  opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header .container {
+    padding: 0 1.5rem; /* Match mobile padding */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
   }
 }
