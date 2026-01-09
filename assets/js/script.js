@@ -120,10 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3>Exploring the Hydrated Phase</h3>
         <br>
         <p>We knew something about the hydrated phosphate phase changes when environmental variables, such as synthesis pH, change. However, this change was not reflected in the X-ray diffraction pattern. We needed a closer look at the immediate environment around the atoms comprising the structure. One method suitable for the task is extended X-ray absorption fine structure
-        spectroscopy (EXAFS), which provides a direct interpretation of the arrangement of atoms in space. Another method is X-ray pair distribution function (PDF), which identifies the most common pairwise distances present in the sample under study. These methods are effective for short- and medium-range structural interpretation, respectively. EXAFS analysis, which I carried out, required
-        extensive Fourier signal processing and error analysis. PDF analysis, done by my collaborators Dmitry Tsymbarenko and Maria Shaulskaya, revealed that the hydrated phase was similar in structure to one of the compounds obtained post-calcination; this was revealed through modelling and Pearson correlation analysis.
+        spectroscopy <b>(EXAFS)</b>, which provides a direct interpretation of the arrangement of atoms in space. Another method is X-ray pair distribution function (PDF), which identifies the most common pairwise distances present in the sample under study. These methods are effective for short- and medium-range structural interpretation, respectively. EXAFS analysis, which I carried out, required
+        extensive Fourier signal processing, wavelet transform and error analysis. PDF analysis, done by my collaborators Dmitry Tsymbarenko and Maria Shaulskaya, revealed that the hydrated phase was similar in structure to one of the compounds obtained post-calcination; this was revealed through modelling and Pearson correlation analysis.
         The methods confirmed our initial guesses that the thorium is surrounded by oxygen atoms and other species are present in channels and cavities between the thorium atoms. Nevertheless, EXAFS and PDF were still blind to the causes of divergent structural evolution during calcination. Changes in pH did <emph>something</emph> to this material - something that was not reflected in the structure,
         but was wholly responsible for thermal behaviour.</p>
+        <br><br>
+        <p>The key detail was not a periodic, well-defined structural feature. X-ray methods could not "see" it. So we turned to other methods: Fourier-transform Infrared Spectroscopy <b>(FTIR)</b> and Nuclear Magnetic Resonance <b>(NMR)</b> spectrometry.</p>
         <br>
         <h3>Bibliography</h3>
         <p><sup>1 </sup>Dooley Jr, J.; Hathaway, J. Two Occurrences of Thorium-Bearing Minerals with Rhabdophane-like Structure. US Geological Survey Professional Paper 1961, 424, 339–341.</p>
