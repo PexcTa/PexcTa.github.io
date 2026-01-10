@@ -269,19 +269,23 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow: auto;
 }
 
 .modal-content {
-  background: white;
-  border-radius: 16px;
-  max-width: 1000px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-  animation: modalOpen 0.4s ease-out;
-  position: relative;
-  padding: 2.5rem;
+background: white;
+border-radius: 16px;
+max-width: 1000px;
+width: 100%;
+max-height: 85vh;
+overflow-y: auto !important;
+box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+animation: modalOpen 0.4s ease-out;
+position: relative !important;
+padding: 2.5rem;
+z-index: 2100 !important;
+margin: 0 auto;
+box-sizing: border-box;
 }
 
 @keyframes modalOpen {
@@ -326,6 +330,11 @@ footer {
   margin: 2rem 0;
 }
 
+.project-detail figure {
+  margin: 1.5rem 0 !important;
+  max-width: 100% !important;
+}
+
 .project-detail img {
   max-width: 100%;
   border-radius: 8px;
@@ -363,9 +372,9 @@ footer {
 
 /* ===== TOOLTIPS - EDGE-AWARE VERSION ===== */
 .tooltip-container {
-  position: relative;
-  display: inline-block;
-  z-index: 100; /* Ensure container is above content */
+  position: relative !important;
+  display: inline !important;
+  z-index: 2150 !important;
 }
 
 .tooltip-trigger {
@@ -375,27 +384,17 @@ footer {
 }
 
 .tooltip-content {
-  position: absolute;
-  z-index: 2147483647;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-  
-  /* Style */
-  width: 280px;
-  background-color: var(--dark);
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  
-  /* Positioning */
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  position: absolute !important;
+  z-index: 2200 !important;
+  width: 280px !important;
+  max-width: 280px !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s !important;
+  left: 50% !important;
+  bottom: 100% !important;
+  transform: translateX(-50%) translateY(10px) !important;
+  pointer-events: none !important; /* Prevents tooltip from blocking scroll */
 }
 
 .tooltip-content::after {
@@ -410,9 +409,9 @@ footer {
 }
 
 .tooltip-container:hover .tooltip-content {
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0)
 }
 
 /* ===== EDGE DETECTION (CSS-ONLY) ===== */
@@ -466,28 +465,6 @@ footer {
   bottom: auto;
   transform: translateX(-50%) rotate(180deg);
   border-color: transparent transparent var(--dark) transparent;
-}
-
-/* ===== MODAL-SPECIFIC FIXES ===== */
-.modal-content {
-  overflow: visible !important; /* Allow tooltips to escape */
-  position: relative;
-}
-
-/* Prevent tooltip clipping */
-.modal-content * {
-  overflow: visible !important;
-}
-
-.modal-content {
-  position: relative;
-  z-index: 2100 !important; /* Must be higher than tooltip's parent */
-}
-
-/* Ensure everything inside modal has proper stacking */
-.modal-content * {
-  position: relative;
-  z-index: 2101 !important;
 }
 
 /* ============== PROFILE HEADER ============== */

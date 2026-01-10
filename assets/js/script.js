@@ -180,8 +180,11 @@ document.addEventListener('click', (e) => {
       document.body.style.overflow = 'hidden';
       
       // 👇 ADD EDGE DETECTION HERE 👇
+      // Force reflow to trigger proper scrolling
+      modalContent.offsetHeight;
+      // Add slight delay for perfect calculation
       setTimeout(() => {
-        setupTooltips(); // Runs after DOM is ready
+        setupTooltips();
       }, 100);
       
       // Close handlers
