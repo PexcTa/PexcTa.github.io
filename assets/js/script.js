@@ -195,6 +195,8 @@ document.addEventListener('click', (e) => {
     
     if (projectContent[projectId]) {
       modalContent.innerHTML = projectContent[projectId];
+      // After setting modalContent.innerHTML
+      setTimeout(setupTooltips, 50);
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
       
@@ -217,22 +219,33 @@ document.addEventListener('click', (e) => {
 
 // 👇 PLACE THE setupTooltips FUNCTION HERE (outside the event listener) 👇
 function setupTooltips() {
+  const modalContent = document.querySelector('.modal-content');
+  const modalRect = modalContent.getBoundingClientRect();
+  
   document.querySelectorAll('.tooltip-container').forEach(container => {
     const trigger = container.querySelector('.tooltip-trigger');
+    const tooltip = container.querySelector('.tooltip-content');
     const rect = trigger.getBoundingClientRect();
-    const modalRect = document.querySelector('.modal-content').getBoundingClientRect();
     
-    // Reset classes
+    // Reset edge classes
     container.classList.remove('left-edge', 'right-edge', 'bottom-edge');
     
-    // Detect edges (with 20px buffer)
-    if (rect.right + 140 > modalRect.right - 20) {
+    // Calculate tooltip position
+    const tooltipWidth = tooltip.offsetWidth;
+    const spaceRight = modalRect.right - rect.right;
+    const spaceLeft = rect.left - modalRect.left;
+    
+    // Right edge detection
+    if (spaceRight < tooltipWidth/2 + 20) {
       container.classList.add('right-edge');
-    }
-    if (rect.left - 140 < modalRect.left + 20) {
+    } 
+    // Left edge detection
+    else if (spaceLeft < tooltipWidth/2 + 20) {
       container.classList.add('left-edge');
     }
-    if (rect.bottom + 70 > modalRect.bottom - 20) {
+    
+    // Bottom edge detection
+    if (modalRect.bottom - rect.bottom < 100) {
       container.classList.add('bottom-edge');
     }
   });
