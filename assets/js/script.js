@@ -45,11 +45,31 @@ document.addEventListener('DOMContentLoaded', () => {
         Aggregation tends to cause formation of fractal structures - that is, structures that look the same regardless of magnification. In other words, it is not unusual for the aggregate to resemble the individual particles it's made of.
         Fractal structures exhibit <i>self-similarity</i>. There has been a lot of interest in algorithms that can accurately model aggregation of particles into fractal structures.
         <br><br>
-        One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by <span class="tooltip"> Guesnet and colleagues (2019) <span class="tooltip-text">  Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. </span> </span>. The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
-        This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an <span class="tooltip">inactivation parameter<span class="tooltip-text">Takes values from 0 to 1.</span></span>, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
+        One such algorithm is the Porous Eden model for mass fractal aggregates, described in detail by 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">Guesnet and colleagues (2019)</span>
+          <span class="tooltip-content">Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73.</span>
+        </span>. The model's main strong point is that judicious choice of parameters allows the user to generate aggregates with a controllable degree of branching.
+        This property of the model allows a wide range of structures - and, hence, physical processes - to be generated. This flexibility is achieved through an 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">inactivation parameter</span>
+          <span class="tooltip-content">Takes values from 0 to 1.</span>
+        </span>, which defines a random chance that a randomly chosen particle gets deactivated during growth. A deactivated particle 
         does not accept any new particles in its vicinity. A particle cannot be deactivated if it is the last active particle. With high deactivation, only a handful of particles are active at any given time, and therefore attachment happens preferentially, creating branched structures.
         <br><br>
-        The figure below illustrates the difference between an <span class="tooltip">aggregate<span class="tooltip-text">10,000 particles.</span></span> simulated with <span class="tooltip">low<span class="tooltip-text"> p = 0.00 </span></span> and <span class="tooltip">high<span class="tooltip-text"> p = 0.95 </span></span> deactivation, respectively.</p>
+        The figure below illustrates the difference between an 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">aggregate</span>
+          <span class="tooltip-content">10,000 particles.</span>
+        </span> simulated with 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">low</span>
+          <span class="tooltip-content">p = 0.00</span>
+        </span> and 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">high</span>
+          <span class="tooltip-content">p = 0.95</span>
+        </span> deactivation, respectively.</p>
         <br>
         <figure>
           <img src="assets/images/aggregates_comparison.png" alt="Aggregates with low and high inactivation probability, side-by-side. The aggregate generated with high inactivation probability is much more branched." class="fractal-aggregates-img0">
@@ -57,7 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </figure>
         <br>
         <p>One use of simulations such as this one is that they allow us to calculate and model a quantity known as structure factor. The structure factor is a mathematical function describing the pattern in which particles are arranged. For aggregates of tiny particles (e.g. nanoparticles or molecules)
-        this quantity is experimentally accessible with a method called <span class="tooltip">small-angle X-ray scattering (SAXS)<span class="tooltip-text">Primarily sensitive to particle size and shape, the technique relies on elastic scattering of X-rays by the electrons in the sample.</span></span>. The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
+        this quantity is experimentally accessible with a method called 
+        <span class="tooltip-container">
+          <span class="tooltip-trigger">small-angle X-ray scattering (SAXS)</span>
+          <span class="tooltip-content">Primarily sensitive to particle size and shape, the technique relies on elastic scattering of X-rays by the electrons in the sample.</span>
+        </span>. The method is powerful, but extracting structural information from it is challenging. One challenge is that the same SAXS dataset may be well-described by multiple models. Another challenge
         is that the mathematical parameters extracted from SAXS analysis are not always intuitively interpretable.
         <br><br>
         These are the exact reasons I turned towards the Porous Eden model and implemented Guesnet's algorithm for simulations.
@@ -76,10 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <br>
         <p>Check back in a few months and I hope to share a paper on the topic! In the meantime, I invite you to check out a demo version of my Porous Eden Mass Fractal Aggregate Simulation Framework via <a href="https://kramar-pemfa.streamlit.app/">my Streamlit-hosted app.</a></p>
         <br>
-        <p><sup>1 </sup> Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. <a href = "https://doi.org/10.1016/j.physa.2018.07.061">doi.org/10.1016/j.physa.2018.07.061</a>.
-</p>
-        <p><sup>2 </sup><a href = "https://www.ovito.org/">www.ovito.org</a></p>
-        <p><sup>3 </sup><a href = "https://debyer.readthedocs.io/en/latest/">debyer.readthedocs.io/en/latest by wojdyr</a></p>
+        <p><sup>1 </sup> Guesnet, E.; Dendievel, R.; Jauffrès, D.; Martin, C. L.; Yrieix, B. A Growth Model for the Generation of Particle Aggregates with Tunable Fractal Dimension. Physica A: Statistical Mechanics and its Applications 2019, 513, 63–73. <a href="https://doi.org/10.1016/j.physa.2018.07.061">doi.org/10.1016/j.physa.2018.07.061</a>.
+        </p>
+        <p><sup>2 </sup><a href="https://www.ovito.org/">www.ovito.org</a></p>
+        <p><sup>3 </sup><a href="https://debyer.readthedocs.io/en/latest/">debyer.readthedocs.io/en/latest by wojdyr</a></p>
       </div>
     `,
     "thorium-phosphates": `
@@ -162,39 +186,69 @@ document.addEventListener('DOMContentLoaded', () => {
     // ... your other projects
   };
 
-  // DELEGATED EVENT LISTENER (works even if cards are hidden!)
-  document.addEventListener('click', (e) => {
-    if (e.target.closest('.project-card')) {
-      e.preventDefault();
-      const card = e.target.closest('.project-card');
-      const projectId = card.getAttribute('data-project');
+// DELEGATED EVENT LISTENER (works even if cards are hidden!)
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.project-card')) {
+    e.preventDefault();
+    const card = e.target.closest('.project-card');
+    const projectId = card.getAttribute('data-project');
+    
+    if (projectContent[projectId]) {
+      modalContent.innerHTML = projectContent[projectId];
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
       
-      if (projectContent[projectId]) {
-        modalContent.innerHTML = projectContent[projectId];
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-        
-        // Close handlers
-        const closeBtn = modal.querySelector('.close-modal');
-        if (closeBtn) {
-          closeBtn.onclick = () => closeModal();
-        }
-        modal.onclick = (e) => {
-          if (e.target === modal) closeModal();
-        };
+      // 👇 ADD EDGE DETECTION HERE 👇
+      setTimeout(() => {
+        setupTooltips(); // Runs after DOM is ready
+      }, 100);
+      
+      // Close handlers
+      const closeBtn = modal.querySelector('.close-modal');
+      if (closeBtn) {
+        closeBtn.onclick = () => closeModal();
       }
+      modal.onclick = (e) => {
+        if (e.target === modal) closeModal();
+      };
     }
-  });
-
-  function closeModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
   }
+});
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'flex') {
-      closeModal();
+// 👇 PLACE THE setupTooltips FUNCTION HERE (outside the event listener) 👇
+function setupTooltips() {
+  document.querySelectorAll('.tooltip-container').forEach(container => {
+    const trigger = container.querySelector('.tooltip-trigger');
+    const rect = trigger.getBoundingClientRect();
+    const modalRect = document.querySelector('.modal-content').getBoundingClientRect();
+    
+    // Reset classes
+    container.classList.remove('left-edge', 'right-edge', 'bottom-edge');
+    
+    // Detect edges (with 20px buffer)
+    if (rect.right + 140 > modalRect.right - 20) {
+      container.classList.add('right-edge');
+    }
+    if (rect.left - 140 < modalRect.left + 20) {
+      container.classList.add('left-edge');
+    }
+    if (rect.bottom + 70 > modalRect.bottom - 20) {
+      container.classList.add('bottom-edge');
     }
   });
+}
+
+// Close modal function
+function closeModal() {
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Escape key handler
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.style.display === 'flex') {
+    closeModal();
+  }
+});
 });
 

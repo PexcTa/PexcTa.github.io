@@ -361,104 +361,122 @@ footer {
   }
 }
 
-body .tooltip {
-  position: relative !important;
-  display: inline-block !important;
-  border-bottom: 1px dashed var(--primary) !important;
-  cursor: help !important;
-}
-
-body .tooltip .tooltip-text {
-  visibility: hidden !important;
-  width: 280px !important;
-  background-color: var(--dark) !important;
-  color: white !important;
-  text-align: center !important;
-  border-radius: 6px !important;
-  padding: 8px 12px !important;
-  position: absolute !important;
-  z-index: 2147483647 !important; /* Maximum possible z-index */
-  bottom: 125% !important;
-  left: 50% !important;
-  margin-left: -140px !important;
-  opacity: 0 !important;
-  transition: opacity 0.3s !important;
-  font-size: 0.9rem !important;
-  line-height: 1.4 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-}
-
-body .tooltip .tooltip-text::after {
-  content: "" !important;
-  position: absolute !important;
-  top: 100% !important;
-  left: 50% !important;
-  margin-left: -5px !important;
-  border-width: 5px !important;
-  border-style: solid !important;
-  border-color: var(--dark) transparent transparent transparent !important;
-}
-
-body .tooltip:hover .tooltip-text {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* UPDATE YOUR EXISTING TOOLTIP CSS WITH THESE ADDITIONS */
-
-.tooltip {
+/* ===== TOOLTIPS - EDGE-AWARE VERSION ===== */
+.tooltip-container {
   position: relative;
   display: inline-block;
+  z-index: 100; /* Ensure container is above content */
+}
+
+.tooltip-trigger {
   border-bottom: 1px dashed var(--primary);
   cursor: help;
-  /* Add this to allow tooltips to escape container */
-  z-index: 2200;
+  display: inline-block;
 }
 
-/* New edge detection positioning */
-.tooltip:hover .tooltip-text {
+.tooltip-content {
+  position: absolute;
+  z-index: 2147483647;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  
+  /* Style */
+  width: 280px;
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  /* Positioning */
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+}
+
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--dark) transparent transparent transparent;
 }
 
-/* When near right edge - align right */
-.tooltip.right-edge:hover .tooltip-text {
+.tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ===== EDGE DETECTION (CSS-ONLY) ===== */
+/* Right edge - align to right */
+.tooltip-container.right-edge .tooltip-content {
   left: auto;
   right: 0;
-  transform: none;
-  margin-left: 0;
+  transform: translateY(10px);
 }
 
-.tooltip.right-edge .tooltip-text::after {
+.tooltip-container.right-edge:hover .tooltip-content {
+  transform: translateY(0);
+}
+
+.tooltip-container.right-edge .tooltip-content::after {
   left: auto;
-  right: 10px;
-  margin-left: 0;
-}
-
-/* When near left edge - align left */
-.tooltip.left-edge:hover .tooltip-text {
-  left: 0;
+  right: 15px;
   transform: none;
-  margin-left: 0;
 }
 
-.tooltip.left-edge .tooltip-text::after {
-  left: 10px;
+/* Left edge - align to left */
+.tooltip-container.left-edge .tooltip-content {
+  left: 0;
   right: auto;
-  margin-left: 0;
+  transform: translateY(10px);
 }
 
-/* Bottom edge detection */
-.tooltip.bottom-edge:hover .tooltip-text {
+.tooltip-container.left-edge:hover .tooltip-content {
+  transform: translateY(0);
+}
+
+.tooltip-container.left-edge .tooltip-content::after {
+  left: 15px;
+  right: auto;
+  transform: none;
+}
+
+/* Bottom edge - flip below */
+.tooltip-container.bottom-edge .tooltip-content {
+  top: 100%;
   bottom: auto;
-  top: 125%;
+  transform: translateY(10px);
 }
 
-.tooltip.bottom-edge .tooltip-text::after {
+.tooltip-container.bottom-edge:hover .tooltip-content {
+  transform: translateY(0);
+}
+
+.tooltip-container.bottom-edge .tooltip-content::after {
   top: -10px;
   bottom: auto;
+  transform: translateX(-50%) rotate(180deg);
   border-color: transparent transparent var(--dark) transparent;
-  transform: rotate(180deg);
+}
+
+/* ===== MODAL-SPECIFIC FIXES ===== */
+.modal-content {
+  overflow: visible !important; /* Allow tooltips to escape */
+  position: relative;
+}
+
+/* Prevent tooltip clipping */
+.modal-content * {
+  overflow: visible !important;
 }
 
 .modal-content {
