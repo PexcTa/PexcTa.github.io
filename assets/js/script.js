@@ -204,29 +204,41 @@ function setupTooltips() {
   document.querySelectorAll('.tooltip-container').forEach(container => {
     const trigger = container.querySelector('.tooltip-trigger');
     const tooltip = container.querySelector('.tooltip-content');
-    const rect = trigger.getBoundingClientRect();
+    const triggerRect = trigger.getBoundingClientRect();
     
     // Reset edge classes
     container.classList.remove('left-edge', 'right-edge', 'bottom-edge');
     
-    // Calculate tooltip position
-    const tooltipWidth = tooltip.offsetWidth;
-    const spaceRight = modalRect.right - rect.right;
-    const spaceLeft = rect.left - modalRect.left;
+    // Get tooltip dimensions
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.opacity = '0';
+    const tooltipRect = tooltip.getBoundingClientRect();
+    
+    // Check boundaries
+    const spaceAbove = triggerRect.top - modalRect.top;
+    const spaceBelow = modalRect.bottom - triggerRect.bottom;
+    const spaceLeft = triggerRect.left - modalRect.left;
+    const spaceRight = modalRect.right - triggerRect.right;
+    
+    // Bottom edge detection (not enough space above)
+    if (spaceAbove < tooltipRect.height + 20) {
+      container.classList.add('bottom-edge');
+    }
     
     // Right edge detection
-    if (spaceRight < tooltipWidth/2 + 20) {
+    if (spaceRight < tooltipRect.width/2) {
       container.classList.add('right-edge');
     } 
     // Left edge detection
-    else if (spaceLeft < tooltipWidth/2 + 20) {
+    else if (spaceLeft < tooltipRect.width/2) {
       container.classList.add('left-edge');
     }
-    
-    // Bottom edge detection
-    if (modalRect.bottom - rect.bottom < 100) {
-      container.classList.add('bottom-edge');
-    }
+  });
+  
+  // Re-enable tooltips
+  document.querySelectorAll('.tooltip-content').forEach(t => {
+    t.style.visibility = 'visible';
+    t.style.opacity = '0';
   });
 }
 
