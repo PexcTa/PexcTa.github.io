@@ -598,3 +598,16 @@ nav {
 .tooltip-container.bottom-edge .tooltip-content::after {
   border-color: transparent transparent #1e3a8a transparent !important;
 }
+
+/* Image-specific formatting */
+.nu601-img1 {
+  max-width: 60% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.nu601-img5 {
+  max-width: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
