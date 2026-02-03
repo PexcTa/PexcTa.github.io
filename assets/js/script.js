@@ -164,10 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
           <span><i class="far fa-flask"></i>Research Project</span>
         </div>
         <i>Some of the figures presented below are reproduced from the author's manuscript published<sup>1</sup> in The Journal of Physical Chemistry Letters. Copyright American Chemical Society, 2024.</i>
+        <h3>At a Glance: Scope, Methodology, and Key Findings</h3>
+        <p>In this project, I investigated a novel porous material called NU-601. NU-601 is a metal-organic framework interesting from the standpoint of solar energy conversion.<br> I carried out <b>organic</b> and <b>inorganic synthesis</b>, including under <b>high pressure</b> conditions. I tested quality with <b>X-ray diffraction (XRD)</b>, <b>scanning electron microscopy (SEM)</b>, <b>UV-Vis spectroscopy</b>, <b>fluorescence spectroscopy</b>, <b>BET surface area analysis</b>, and <b>time-resolved fluorescence spectroscopy</b>.<br> I managed the project from start to finish, including experimental design, data collection, analysis, visualisation, and report writing. I also collaborated with computational chemists and microscopists.<br> I carried out <b>target analysis></b> by reducing dimensionality of a large dataset, then imposing a <b>population model</b> to characterise the dataset as a combination of 3 key components.<br> My study enabled fundamental understanding and opened a new direction of research, helping secure another large grant from the U.S. Department of Energy Solar program.</p>
+        <br>
         <h3>NU-601: The Structure Under Study</h3>
         <p><b>Metal-organic frameworks (MOFs)</b> are modular materials composed of metal-oxo clusters called <b>nodes</b> and organic molecules referred to as <b>linkers</b>. 
         One application for MOFs is light harvesting. The term originates from natural photosynthesis, where light energy is captured by large collections of pigments. The linkers in a MOF can also be thought of as pigments. To predict if they would do well as light harvesters, we need to understand how they interact with light. I used a MOF called NU-601 as a test case.</p>
-        <br>
         <p>The figure below depicts a zirconium node, one of the secondary building units in NU-601. The node is composed of six zirconium atoms connected by oxygen atoms. In the image, it is depicted coated (<i>ligated</i>) by a collection of acetate groups. Acetates are <i>carboxylates</i>, ions containing a carboxyl group (-COO<sup>-</sup>).</p>
         <figure>
           <img src="assets/images/nu601_img0_zrnode.png" alt="An image of the zirconium node, depicted with 12 ligating acetates." class="nu601-img1">
@@ -187,10 +189,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <figcaption><i>(Top part) The node and the linker combine into extended, three-dimensional structure. (Bottom part) This three-dimensional structure can extend many "cells", forming a framework and resulting in the formation of large, accessible channels.</i></figcaption>
         </figure>
         <p>The importance of those hydroxyl and water groups is that they engender <i>acid-base</i> chemistry to the node. The <b>H</b> atoms in the hydroxo and water groups can dissociate as <b>H<sup>+</sup></b>, and will do so if the environment is sufficiently alkaline.</p>
-        <br>
-        <p>To recap, NU-601 is a Zr-based MOF composed of Zr-based nodes and tetra-phenylcarboxylate linkers. Each linker is connected to 4 nodes. Each node supports 6 linkers with 6 more occupied by hydroxyl and water groups. The linkers and nodes align into a large, three-dimensional structure. When aqua and hydroxo groups are present on the node, they can lose their protons (H<sup>+</sup>) in alkaline conditions. This does not affect the linker-node connections.</p>
-        <br>
+        <p><b>To recap</b>, NU-601 is a Zr-based MOF composed of Zr-based nodes and tetra-phenylcarboxylate linkers. Each linker is connected to 4 nodes. Each node supports 6 linkers with 6 more occupied by hydroxyl and water groups. The linkers and nodes align into a large, three-dimensional structure. When aqua and hydroxo groups are present on the node, they can lose their protons (H<sup>+</sup>) in alkaline conditions. This does not affect the linker-node connections.</p>
         <p>Look back at the image depicting the framework and note how large the channels are compared to solid material; this means that the nodes and the linkers are exposed to whatever environment the framework finds itself in. External air and water can access the insides of the framework.</p>
+        <br>
         <h3>The Excited State</h3>
         <p>In the above discussion of NU-601's structure, we have observed that the formation of the framework locks a large collection of molecules - the linkers - into close proximity. Their rigid connections with the nodes hold them in place. They may absorb incoming light. Absorption of light usually boils down to an interaction between a molecule (or a cluster, like the node) and a photon. For absorption to occur, the energy of this photon needs to match an <i>energy gap</i> between <i>energy levels</i> present in the material. We talk about this in terms of <i>ground</i> and <i>excited</i> states; the difference in their energies is equal to that gap.<br>It turns out that the ground-excited energy gap for the zirconium node is far larger than that for the linker. If the ground and excited states were like banks of a river, and you wished to connect them with a bridge, you would find it much easier for the linker than for the node. As a result, a common assumption in zirconium MOF science is that the node is <b>inert</b>. Very high energy light ("hard UV") would be required to excite it.<br>
         The properties of the excited state have to be determined in order to quantitatively assess a material's light harvesting potential.<br>
@@ -205,11 +206,12 @@ document.addEventListener('DOMContentLoaded', () => {
           <img src="assets/images/nu601_img5_fluorescenceSpectra.png" alt="A figure showing overlaid fluorescence spectra for NU-601 and its linker. The spectrum of the MOF is concentrated on the lower energy side." class="nu601-img5">
           <figcaption><i>Fluorescence spectra for the linker (red, dashed) and NU-601 (purple, solid).</i></figcaption>
         </figure>
-        <p>The fluorescence spectrum of the MOF is markedly different from that of the linker on its own. This feature of NU-601 is unusual. It shows that the excited state in NU-601 relaxes, or decays, through a pathway different from that of the linker. Since the linkers within the MOF are chemically equivalent to free linkers, and do not interact among themselves, the reason has to lie with the node. This is unusual, because the node's high <b>energy gap</b> should render it inert, and it should not affect the excited state. And yet.</p> 
-        <p>Here's how I proved that it did.</p>
+        <p>The fluorescence spectrum of the MOF is markedly different from that of the linker on its own. This feature of NU-601 is unusual. It shows that the excited state in NU-601 relaxes, or decays, through a pathway different from that of the linker. Since the linkers within the MOF are chemically equivalent to free linkers, and do not interact among themselves, the reason has to lie with the node. This is unusual, because the node's high <b>energy gap</b> should render it inert, and it should not affect the excited state. And yet it did.</p> 
+        <p>Here's my proof.</p>
+        <br>
         <h3>The Node's Role in the Excited State Equilibrium</h3>
         <p>Earlier, I showed that the node in NU-601 is connected to only 6 linkers. The remaining binding sites are chemically active. This means they can interact with the environment. Most notably, the hydroxyl (OH<sup>-</sup>) and aqua (H<sub>2</sub>O) groups can lose protons (H<sup>+</sup>) in alkaline conditions. We can drive (de)protonation of the node by changing the properties of the solution that the MOF is immmersed in. <b>Important reminder</b>: the linkers <b>lack</b> the functionality to interact with the solution, because the carboxylate groups are bound, and the organic backbone, composed of hexagonal phenyl rings, is hydrophobic and highly stable. <br>The easiest way to change the properties of the solution is to change its <b>pH</b>.<br>The pH scale is a logarithmic scale describing the concentration of protons (H<sup>+</sup>) in solution. Low pH values (0-6) correspond to high proton concentrations; high pH values (8-14) correspond to low proton concentrations. A pH of 7 is considered neutral.<br>The logic we are applying here is as follows: if the node affects the excited state of the linker, then changing the protonation state of the node should affect the fluorescence spectrum of the MOF. If the node does not affect the excited state, then changing its protonation state should have no effect on the fluorescence spectrum. Notably, my colleagues working on the computational theoretical side of the project predicted that there <b>should</b> be an effect.</p>
-        <p>Furthermore, we could even predict at <i>which</i> pH values the effect should be most pronounced. The interactions between the nodes and the protons in solution as a function of pH can be summarised with a set of mathematical relationships, the Henderson-Hasselbalch equations. These equations relate the pH of the solution to the ratio of protonated and deprotonated species on the node surface. To apply the equations, one needs to know how likely the different oxygen-containing groups are to (de)protonate at a given pH. This likelihood is captured in a constant called pK<sub>a</sub>. The pK<sub>a</sub> values for the zirconium nodes are known from literature. By plugging these values into the equations, we can visualise the populations of different (de)protonated node species versus pH.</p>
+        <p>Furthermore, we could even predict at <i>which</i> pH values the effect should be most pronounced. The interactions between the nodes and the protons in solution as a function of pH can be summarised with a set of mathematical relationships, the Henderson-Hasselbalch equations. These equations relate the pH of the solution to the ratio of protonated and deprotonated species on the node surface. To apply the equations, one needs to know how likely the different oxygen-containing groups are to (de)protonate at a given pH. This likelihood is captured in a constant called pK<sub>a</sub>. The pK<sub>a</sub> values for the zirconium nodes are known from literature<sup>3</sup>. By plugging these values into the equations, we can visualise the populations of different (de)protonated node species versus pH.</p>
         <figure>
           <img src="assets/images/nu601_img6_populations.png" alt="A figure showing relative populations of different protonated node species changing as a function of pH. There are 4 different protonation states accessible in the 0-14 range." class="nu601-img6">
           <figcaption><i>(Top panel) Relative populations of different protonated node species changing as a function of pH. The intersection points correspond to known pK<sub>a</sub> values. (Bottom panel) Protonation states of the node, color-coded to match the curves.</i></figcaption>
@@ -229,11 +231,22 @@ document.addEventListener('DOMContentLoaded', () => {
           <figcaption><i>(Left panel) A series of rebinned fluorescence spectra with fits plotted over them in black dashed line. The color indicates pH (red = low, blue = high). (Right, top panel) Unique spectral components identified through target analysis. (Right, bottom panel) Populations of unique spectral components, changing with pH.</i></figcaption>
         </figure>
         <p>Such decomposition is a powerful tool for understanding complex datasets. Here, it has allowed us to determine the acidity of the excited state, which is a rare and valuable insight.</p>
-        
-
-
-        
-
+        <br>
+        <h3>Summary and Conclusions</h3>
+        <p>In this large-scale project, I have studied the excited state properties in a zirconium-based metal-organic framework, NU-601. I have demonstrated that the node, previously assumed to be inert, actually plays a crucial role in determining the properties of the excited state. By changing the pH of the solution surrounding the MOF, I was able to drive (de)protonation of the node surface, which in turn affected the fluorescence spectrum of the linker-centered excited state. This finding challenges existing assumptions about zirconium MOFs and opens up new avenues for tuning their photophysical properties through surface chemistry
+        .</p>
+        <br>
+        <h3>Some Pretty Images</h3>
+        <br>
+        <h3>Bibliography</h3>
+        <ul>
+          <li><strong>[1] Kramar, B. V.; Bondarenko, A. S.; Koehne, S. M.; Diroll, B. T.; Wang, X.; Yang, H.; Schanze, K. S.; Chen, L. X.; Tempelaar, R.; Hupp, J. T. Unexpected Photodriven Linker-to-Node Hole Transfer in a Zirconium-Based Metal–Organic Framework. J. Phys. Chem. Lett. 2024, 15 (46), 11496–11503. https://doi.org/10.1021/acs.jpclett.4c02848.
+</li>
+          <li><strong>[2] Lu, Z.; Wang, R.; Liao, Y.; Farha, O. K.; Bi, W.; Sheridan, T. R.; Zhang, K.; Duan, J.; Liu, J.; Hupp, J. T. Isomer of Linker for NU-1000 Yields a New She-Type, Catalytic, and Hierarchically Porous, Zr-Based Metal–Organic Framework. Chem. Commun. 2021, 57 (29), 3571–3574. https://doi.org/10.1039/D0CC07974J.
+</li>
+          <li><strong>[3] Klet, R. C.; Liu, Y.; Wang, T. C.; Hupp, J. T.; Farha, O. K. Evaluation of Brønsted Acidity and Proton Topology in Zr- and Hf-Based Metal–Organic Frameworks Using Potentiometric Acid–Base Titration. J. Mater. Chem. A 2016, 4 (4), 1479–1485. https://doi.org/10.1039/C5TA07687K.
+</li>
+        </ul>
       </div>
       `
     // ... your other projects

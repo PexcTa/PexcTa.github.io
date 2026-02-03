@@ -601,13 +601,13 @@ nav {
 
 /* Image-specific formatting */
 .nu601-img1 {
-  max-width: 60% !important;
+  max-width: 50% !important;
   display: block !important;
   margin: 0 auto !important;
 }
 
 .nu601-img5 {
-  max-width: 100% !important;
+  max-width: 75% !important;
   display: block !important;
   margin: 0 auto !important;
 }
